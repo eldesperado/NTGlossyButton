@@ -8,11 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		253A39C41BFEFF87005F00BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253A39C31BFEFF87005F00BE /* AppDelegate.swift */; };
-		253A39C61BFEFF87005F00BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253A39C51BFEFF87005F00BE /* ViewController.swift */; };
 		253A39C91BFEFF87005F00BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253A39C71BFEFF87005F00BE /* Main.storyboard */; };
 		253A39CB1BFEFF87005F00BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 253A39CA1BFEFF87005F00BE /* Assets.xcassets */; };
 		253A39CE1BFEFF87005F00BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 253A39CC1BFEFF87005F00BE /* LaunchScreen.storyboard */; };
 		253A39D91BFEFF87005F00BE /* NTGlossyButtonTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253A39D81BFEFF87005F00BE /* NTGlossyButtonTests.swift */; };
+		253A39EA1BFEFFEC005F00BE /* NTDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253A39E91BFEFFEC005F00BE /* NTDemoViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		253A39ED1BFF0018005F00BE /* NTGlossyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253A39EC1BFF0018005F00BE /* NTGlossyButton.swift */; settings = {ASSET_TAGS = (); }; };
+		253A39EF1BFF00A7005F00BE /* CALayer+NTAnimationHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 253A39EE1BFF00A7005F00BE /* CALayer+NTAnimationHelper.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +30,6 @@
 /* Begin PBXFileReference section */
 		253A39C01BFEFF87005F00BE /* NTGlossyButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NTGlossyButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		253A39C31BFEFF87005F00BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		253A39C51BFEFF87005F00BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		253A39C81BFEFF87005F00BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		253A39CA1BFEFF87005F00BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		253A39CD1BFEFF87005F00BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +37,9 @@
 		253A39D41BFEFF87005F00BE /* NTGlossyButtonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NTGlossyButtonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		253A39D81BFEFF87005F00BE /* NTGlossyButtonTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NTGlossyButtonTests.swift; sourceTree = "<group>"; };
 		253A39DA1BFEFF87005F00BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		253A39E91BFEFFEC005F00BE /* NTDemoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTDemoViewController.swift; sourceTree = "<group>"; };
+		253A39EC1BFF0018005F00BE /* NTGlossyButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NTGlossyButton.swift; sourceTree = "<group>"; };
+		253A39EE1BFF00A7005F00BE /* CALayer+NTAnimationHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CALayer+NTAnimationHelper.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +81,11 @@
 		253A39C21BFEFF87005F00BE /* NTGlossyButton */ = {
 			isa = PBXGroup;
 			children = (
-				253A39C31BFEFF87005F00BE /* AppDelegate.swift */,
-				253A39C51BFEFF87005F00BE /* ViewController.swift */,
-				253A39C71BFEFF87005F00BE /* Main.storyboard */,
-				253A39CA1BFEFF87005F00BE /* Assets.xcassets */,
-				253A39CC1BFEFF87005F00BE /* LaunchScreen.storyboard */,
-				253A39CF1BFEFF87005F00BE /* Info.plist */,
+				253A39EB1BFEFFFF005F00BE /* NTGlossyButton */,
+				253A39E31BFEFF8F005F00BE /* App */,
+				253A39E41BFEFF99005F00BE /* View Controllers */,
+				253A39E51BFEFFA2005F00BE /* Views */,
+				253A39E61BFEFFAA005F00BE /* Resources */,
 			);
 			path = NTGlossyButton;
 			sourceTree = "<group>";
@@ -94,6 +97,65 @@
 				253A39DA1BFEFF87005F00BE /* Info.plist */,
 			);
 			path = NTGlossyButtonTests;
+			sourceTree = "<group>";
+		};
+		253A39E31BFEFF8F005F00BE /* App */ = {
+			isa = PBXGroup;
+			children = (
+				253A39C31BFEFF87005F00BE /* AppDelegate.swift */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		253A39E41BFEFF99005F00BE /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				253A39E91BFEFFEC005F00BE /* NTDemoViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		253A39E51BFEFFA2005F00BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				253A39C71BFEFF87005F00BE /* Main.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		253A39E61BFEFFAA005F00BE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				253A39E71BFEFFB4005F00BE /* Images */,
+				253A39E81BFEFFBC005F00BE /* Other Resources */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		253A39E71BFEFFB4005F00BE /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				253A39CA1BFEFF87005F00BE /* Assets.xcassets */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		253A39E81BFEFFBC005F00BE /* Other Resources */ = {
+			isa = PBXGroup;
+			children = (
+				253A39CC1BFEFF87005F00BE /* LaunchScreen.storyboard */,
+				253A39CF1BFEFF87005F00BE /* Info.plist */,
+			);
+			name = "Other Resources";
+			sourceTree = "<group>";
+		};
+		253A39EB1BFEFFFF005F00BE /* NTGlossyButton */ = {
+			isa = PBXGroup;
+			children = (
+				253A39EC1BFF0018005F00BE /* NTGlossyButton.swift */,
+				253A39EE1BFF00A7005F00BE /* CALayer+NTAnimationHelper.swift */,
+			);
+			name = NTGlossyButton;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +202,7 @@
 		253A39B81BFEFF87005F00BE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = NT;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Pham Nguyen Nhat Trung";
 				TargetAttributes = {
@@ -196,8 +259,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				253A39C61BFEFF87005F00BE /* ViewController.swift in Sources */,
+				253A39EF1BFF00A7005F00BE /* CALayer+NTAnimationHelper.swift in Sources */,
 				253A39C41BFEFF87005F00BE /* AppDelegate.swift in Sources */,
+				253A39ED1BFF0018005F00BE /* NTGlossyButton.swift in Sources */,
+				253A39EA1BFEFFEC005F00BE /* NTDemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
